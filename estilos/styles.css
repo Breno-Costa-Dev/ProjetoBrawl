@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+body{
+    background-color: rgb(45, 45, 45);
+    background-image: url(../imagens/back.png);
+}
+section{
+    margin: auto;
+    background-color:#fbe65c;
+    background-image:url("../imagens/Brawl-Stars-Logo.png");
+    height: 150px;
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+nav{
+    background-color: #fbe65c;    
+    width: auto;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 10px;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: rgb(232, 246, 109);
+    padding: 5px 5px 0px 5px;
+}
+
+div#texto{
+    color: black;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#636052,#bbb074,#c9c199) ;
+}
+div#selecao{
+    text-align: center;
+}
+div#selecao > img{
+    margin: 5px;
+    width: auto;
+    height: 200px;
+}
+div#selecao > img:hover{
+     transform: scale(1.1);
+    transition-duration: 4ms;
+    opacity: 110%;
+}
+div#botoes{
+    text-align: center;
+}
+div > input{
+    color: rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin: 10px 5px 10px 0px;
+    width: 250px;
+}
+div#aba01{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow:5px 5px 3px rgba(19, 19, 19, 0.855);
+    margin: auto;
+    display: none;
+    background-color: rgb(144, 145, 145);
+    height: 500px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+div#aba02{
+     border: 2px solid black;
+    box-shadow:5px 5px 3px rgb(9, 49, 8);;
+    margin: auto;
+    display: none;
+    background-color: rgb(46, 244, 43);
+    height: 500px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+div#aba03{
+     border: 2px solid black;
+    box-shadow:5px 5px 3px rgb(8, 30, 54);
+    margin: auto;
+    display: none;
+    background-color: rgb(15, 99, 196);
+    height: 500px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+div#aba04{
+     border: 2px solid black;
+    box-shadow:5px 5px 3px rgb(1, 8, 67);
+    margin: auto;
+    display: none;
+    background-color: rgb(0, 16, 158);
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+div#aba01 > h1{
+    color: white;
+    background-color: black;
+    width: 460px;
+    border-radius: 5px;
+    margin:auto;
+    margin-top: 10px;
+}
+div#aba01 > img{
+    width: auto;
+    height: 166px;
+    margin: 10px;
+}
+div#aba01 >  img:hover{
+    transform: scale(1.1);
+    transition-duration: 4ms;
+}
+div.curiosidades > h2{
+    border-radius: 5px;
+    background-color: rgb(244, 244, 75);
+    margin: auto;
+    width: 460px;
+}
+div.curiosidades > p{
+    display: none;
+    margin-top: 20px;
+    background-color: rgb(244, 244, 75);
+    border: 5px solid rgb(149, 149, 21);
+    border-radius: 5px;
+}

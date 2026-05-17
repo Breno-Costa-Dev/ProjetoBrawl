@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Home</title>
+</head>
+<body>
+    <section>
+    </section>
+    <nav>
+            <a href="http://" target="_blank">Brawlers</a>
+            <a href="http://" target="_blank">Notícias</a>
+            <a href="http://" target="_blank">Eventos</a>
+            <a href="http://" target="_blank">Ao vivo</a>
+        </nav>
+    <div id="texto">
+        <h1>Seja Bem vindo ao site de curiosidades e Noticias de Brawl Stars, fique por dentro do Meta Atual e como melhorar suas habilidades e se tornar um Main do seu Brawler favorito</h1>
+    </div>
+
+    <div id="selecao">
+        <img src="imagens/habilidades.png" alt="habilidades">
+        <img src="imagens/Meta.png" alt="Meta">
+    </div>
+
+    <div id="botoes">
+        <input type="button" value="Comum" id="btaba01" style="background-color: rgb(144, 145, 145);">
+        <input type="button" value="incomum" id="btaba02" style="background-color:rgb(46, 244, 43);">
+        <input type="button" value="Raro" id="btaba03" style="background-color: rgb(15, 99, 196);">
+        <input type="button" value="Super Raro" id="btaba04" style="background-color:rgb(0, 16, 158);">
+    </div>
+
+    <div id="aba01">
+        <h1>Brawlers de Raridade Comum</h1>
+            <img src="imagens/Shelly.webp" alt="Shelly" id="shelly">
+            <img src="imagens/Bull.webp" alt="Bull" id="bull">
+            <img src="imagens/Colt.webp" alt="Colt" id="colt">
+            <div class="curiosidades"><h2>Selecione um Brawler para saber mais!</h2>
+            <p id="telacurio01"></p></div>
+    </div>
+    <div id="aba02"></div>
+    <div id="aba03"></div>
+    <div id="aba04"></div>
+
+    <script>
+        var btt01 = document.getElementById('btaba01')
+        var btt02 = document.getElementById('btaba02')
+        var btt03 = document.getElementById('btaba03')
+        var btt04 = document.getElementById('btaba04')
+
+        var se1 = document.getElementById('aba01')
+        var se2 = document.getElementById('aba02')
+        var se3 = document.getElementById('aba03')
+        var se4 = document.getElementById('aba04')
+
+        btt01.addEventListener('click',aba01)
+        btt02.addEventListener('click',aba02)
+        btt03.addEventListener('click',aba03)
+        btt04.addEventListener('click',aba04)
+
+        function aba01(){
+            se1.style.display = "block";
+            se2.style.display = "none";
+             se3.style.display = "none";
+              se4.style.display = "none";
+        }
+        function aba02(){
+            se1.style.display = "none";
+            se2.style.display = "block";
+             se3.style.display = "none";
+              se4.style.display = "none";
+        }
+        function aba03(){
+             se1.style.display = "none";
+              se2.style.display = "none";
+               se3.style.display = "block";
+                se4.style.display = "none";
+        }
+        function aba04(){
+             se1.style.display = "none";
+              se2.style.display = "none";
+               se3.style.display = "none";
+                se4.style.display = "block";
+        }
+
+        var clickS = document.getElementById('shelly')
+        var clickB = document.getElementById('bull')
+        var clickC = document.getElementById('colt')
+
+        var curioS = document.getElementById('telacurio01')
+        var curioB = document.getElementById('telacurio01')
+        var curioC = document.getElementById('telacurio01')
+
+        clickS.addEventListener('click',tela01)
+        clickB.addEventListener('click',tela02)
+        clickC.addEventListener('click',tela03)
+
+
+    
+        function tela01(){
+            curioS.style.display = "inline-block";
+            curioS.innerText = "Shelly é a lutadora perfeita: confiável, durona e imbatível com a espingarda. Com tantas qualidades assim, ela nunca entendeu como o Colt virou o queridinho da galera..."
+        }
+        function tela02(){
+            curioS.style.display = "inline-block";
+            curioS.innerText = "Bull não é tão despreocupado como era na juventude, mas só porque seus dias de rebeldia ficaram para trás não significa que ele não vá esmagar alguém que esteja pedindo por isso."
+        }
+        function tela03(){
+            curioS.style.display = "inline-block";
+            curioS.innerText = "Colt é a principal atração do Starr Park! Sua boa aparência, carisma e truques com armas conquistam qualquer público, exceto talvez a Shelly."
+        }
+
+
+
+    </script>
+</body>
+</html>
