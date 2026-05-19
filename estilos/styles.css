@@ -1,7 +1,19 @@
 @charset 'UTF-8';
+
+@font-face {
+    font-family: Fonte01;
+    src: url(../fontes/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fonte02;
+    src: url(../fontes/RobotoSlab-VariableFont_wght.ttf);
+}
+
+
+
+
 body{
-    background-color: rgb(45, 45, 45);
-    background-image: url(../imagens/back.png);
+    background-image:linear-gradient(to bottom,rgb(18, 18, 18),rgb(42, 42, 42),rgb(6, 5, 5))
 }
 section{
     margin: auto;
@@ -23,7 +35,7 @@ nav a{
     color: rgb(0, 0, 0);
     margin-left: 10px;
     text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Fonte02;
     font-weight: bolder;
 }
 a:hover{
@@ -33,9 +45,11 @@ a:hover{
 }
 
 div#texto{
-    color: black;
+    text-shadow: 3px 2px black;
+    font-family: Fonte01;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    background-image: linear-gradient(to right,#636052,#bbb074,#c9c199) ;
+    background-image: linear-gradient(to right,#636052,#bbb074,#c9c199);
 }
 div#selecao{
     text-align: center;
@@ -50,6 +64,13 @@ div#selecao > img:hover{
     transition-duration: 4ms;
     opacity: 110%;
 }
+h3{
+    color: white;
+    text-shadow: 3px 2px black;
+    text-align: center;
+    font-size: 30px;
+    
+}
 div#botoes{
     text-align: center;
 }
@@ -61,6 +82,7 @@ div > input{
     width: 250px;
 }
 div#aba01{
+    font-family: Fonte02;
     border: 2px solid rgb(0, 0, 0);
     box-shadow:5px 5px 3px rgba(19, 19, 19, 0.855);
     margin: auto;
@@ -129,6 +151,7 @@ div.curiosidades > h2{
     width: 460px;
 }
 div.curiosidades > p{
+    font-family: Fonte02;
     display: none;
     margin-top: 20px;
     background-color: rgb(244, 244, 75);
